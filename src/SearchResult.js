@@ -20,7 +20,7 @@ function SearchResult() {
 
       {/* Fetch data from API */}
       <div>
-        <Button color={'green'} text={'Go'} onClick={fetchData} />
+        {/* <Button color={'green'} text={'Go'} onClick={fetchData} /> */}
         <br />
       </div>
 

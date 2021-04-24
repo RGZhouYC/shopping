@@ -21,6 +21,7 @@ export default function App() {
     <div className='container'>
       <Header />
       <Router>
+        <SearchBar />
         <Switch>
           <Route path="/SearchBar" component={SearchBar}/>
           <Route path="/SearchResult" component={SearchResult}/>

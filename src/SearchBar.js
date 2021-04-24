@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button'
 //import { NativeRouter, Route, Link } from "react-router-native";
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import SearchResult from './SearchResult'
 
 const SearchBar = ({ keyword, setKeyword }) => {
@@ -17,10 +17,12 @@ const SearchBar = ({ keyword, setKeyword }) => {
         value={keyword}
         placeholder={"search item"}
         onChange={(e) => setKeyword(e.target.value)} />
-      <Button
-        color={'green'}
-        text={'Go'}
-        onClick={onClick} />
+      <Link to='/SearchResult'>
+        <Button
+          color={'green'}
+          text={'Go'}
+          onClick={onClick} />
+      </Link>
     </div>
   );
 }
